@@ -1,0 +1,54 @@
+{
+    "name": "drupalnl/splashawards-project",
+    "description": "Easy to use Composer based installer for the Splash Awards Drupal 8 distribution.",
+    "type": "project",
+    "homepage": "https://github.com/DrupalNL/splashawards-project",
+    "require": {
+        "drupal-composer/drupal-scaffold": "^2.0.0",
+        "drupal/splashawards": "*",
+        "composer/installers": "^1.0"
+    },
+    "require-dev": {
+        "composer/composer": "^1.3"
+    },
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        ],
+        "post-update-cmd": [
+            "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+        ]
+    },
+    "config": {
+        "bin-dir": "bin/"
+    },
+    "extra": {
+        "installer-paths": {
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
+        },
+        "enable-patching": true
+    }
+}
