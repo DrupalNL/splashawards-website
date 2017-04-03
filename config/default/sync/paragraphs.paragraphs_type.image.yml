@@ -1,0 +1,7 @@
+uuid: a639c916-b302-4c0e-935f-01c788783690
+langcode: nl
+status: true
+dependencies: {  }
+id: image
+label: Image
+behavior_plugins: {  }

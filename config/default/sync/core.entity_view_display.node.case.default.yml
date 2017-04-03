@@ -1,0 +1,203 @@
+uuid: 1aaa072e-4f70-41f1-8b19-250667a90927
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.field.node.case.body
+    - field.field.node.case.field_case_background
+    - field.field.node.case.field_case_category
+    - field.field.node.case.field_case_challenges
+    - field.field.node.case.field_case_contact_email
+    - field.field.node.case.field_case_contact_name
+    - field.field.node.case.field_case_contact_phone
+    - field.field.node.case.field_case_contributions
+    - field.field.node.case.field_case_customer
+    - field.field.node.case.field_case_customer_logo
+    - field.field.node.case.field_case_customer_quote
+    - field.field.node.case.field_case_goals
+    - field.field.node.case.field_case_invoice_email
+    - field.field.node.case.field_case_launch_date
+    - field.field.node.case.field_case_logo
+    - field.field.node.case.field_case_modules
+    - field.field.node.case.field_case_organisation
+    - field.field.node.case.field_case_results
+    - field.field.node.case.field_case_screenshots
+    - field.field.node.case.field_case_terms_agreed
+    - field.field.node.case.field_case_url
+    - field.field.node.case.field_case_video
+    - node.type.case
+  module:
+    - datetime
+    - entity_reference_revisions
+    - image
+    - link
+    - text
+    - user
+    - video_embed_field
+id: node.case.default
+targetEntityType: node
+bundle: case
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_case_background:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_case_category:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_case_challenges:
+    weight: 115
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_case_contact_email:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_case_contact_name:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_case_contact_phone:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_case_contributions:
+    weight: 116
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_case_customer:
+    weight: 117
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_case_customer_logo:
+    weight: 118
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_case_customer_quote:
+    type: entity_reference_revisions_entity_view
+    weight: 119
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+  field_case_goals:
+    weight: 112
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_case_invoice_email:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_case_launch_date:
+    weight: 110
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_case_logo:
+    weight: 103
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_case_modules:
+    weight: 123
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_case_organisation:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_case_results:
+    weight: 113
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_case_screenshots:
+    weight: 120
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_case_terms_agreed:
+    weight: 122
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_case_url:
+    weight: 109
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_case_video:
+    weight: 121
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+  links:
+    weight: 100
+hidden:
+  langcode: true

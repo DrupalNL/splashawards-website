@@ -1,0 +1,14 @@
+uuid: 0ff7a2ae-915d-405c-87dc-d7e808c1d590
+name: 'Splash Awards Nederland'
+mail: info@splashawards.nl
+slogan: 'De beste Drupal projecten en bijdragen uit de Nederlandstalige Drupal community.'
+page:
+  403: ''
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+langcode: nl
+default_langcode: nl
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

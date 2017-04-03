@@ -1,0 +1,19 @@
+uuid: 0fea9f95-7218-4e9a-bf26-8f6a34a47d3e
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_modules
+    - node.type.case
+id: node.case.field_case_modules
+field_name: field_case_modules
+entity_type: node
+bundle: case
+label: 'Uitdagende (combinatie van) modules'
+description: 'Hoe werden bestaande modules (contrib) gecombineerd om (een) niet-alledaagse uitdaging(en) te overwinnen?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

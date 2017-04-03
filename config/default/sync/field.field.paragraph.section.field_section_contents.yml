@@ -1,0 +1,57 @@
+uuid: 39eb704e-5d02-413e-8760-dae5a86f3048
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_contents
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.view
+  module:
+    - entity_reference_revisions
+id: paragraph.section.field_section_contents
+field_name: field_section_contents
+entity_type: paragraph
+bundle: section
+label: Contents
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      text: text
+      image: image
+      video: video
+      view: view
+    target_bundles_drag_drop:
+      text:
+        enabled: true
+        weight: -17
+      image:
+        enabled: true
+        weight: -16
+      video:
+        enabled: true
+        weight: -15
+      view:
+        enabled: true
+        weight: -14
+      block:
+        weight: -13
+        enabled: false
+      call_to_action:
+        weight: -12
+        enabled: false
+      hero:
+        weight: -11
+        enabled: false
+      section:
+        weight: -10
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,19 @@
+uuid: df05e063-8959-400a-b0e4-4664af394351
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_results
+    - node.type.case
+id: node.case.field_case_results
+field_name: field_case_results
+entity_type: node
+bundle: case
+label: Resultaten
+description: 'Welke resultaten heeft de klant behaald na oplevering van het project en op welke manier droeg het opgeleverde werk daar aan bij?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

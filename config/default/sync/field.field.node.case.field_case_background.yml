@@ -1,0 +1,19 @@
+uuid: 983f4eba-3ef9-4ec0-89a9-1524a50f3884
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_background
+    - node.type.case
+id: node.case.field_case_background
+field_name: field_case_background
+entity_type: node
+bundle: case
+label: Achtergrond
+description: 'In welke context is het project uitgevoerd? Wat waren de beweegredenen van de klant voor dit project?'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

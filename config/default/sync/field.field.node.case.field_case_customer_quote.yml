@@ -1,0 +1,51 @@
+uuid: fe01f6e7-d2f2-46b8-a7eb-e8dd2dd9ff69
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_customer_quote
+    - node.type.case
+    - paragraphs.paragraphs_type.quote
+  module:
+    - entity_reference_revisions
+id: node.case.field_case_customer_quote
+field_name: field_case_customer_quote
+entity_type: node
+bundle: case
+label: 'Wat vindt de klant van het project?'
+description: 'Laat de klant iets vertellen over het project, de samenwerking en het eindresultaat.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      quote: quote
+    target_bundles_drag_drop:
+      quote:
+        enabled: true
+        weight: 9
+      block:
+        weight: 10
+        enabled: false
+      call_to_action:
+        weight: 11
+        enabled: false
+      image:
+        weight: 12
+        enabled: false
+      section:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+      video:
+        weight: 15
+        enabled: false
+      view:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,23 @@
+uuid: 31e3ce26-e595-469c-8d32-0397a6aaffe7
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_terms_agreed
+    - node.type.case
+id: node.case.field_case_terms_agreed
+field_name: field_case_terms_agreed
+entity_type: node
+bundle: case
+label: 'Ik ga akkoord met de voorwaarden voor inzending'
+description: 'Lees de <a href="/voorwaarden-inzending">voorwaarden voor inzending</a>.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Aan
+  off_label: Uit
+field_type: boolean

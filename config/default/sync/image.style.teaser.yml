@@ -1,0 +1,14 @@
+uuid: 61072684-4e63-4cf2-b117-3ab86e4fdaab
+langcode: nl
+status: true
+dependencies: {  }
+name: teaser
+label: 'Teaser (580 x 325)'
+effects:
+  5118b1c6-0330-49be-914b-4c012727c3c7:
+    uuid: 5118b1c6-0330-49be-914b-4c012727c3c7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 580
+      height: 325

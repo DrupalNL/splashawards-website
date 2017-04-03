@@ -1,0 +1,7 @@
+uuid: 49971314-2b45-4b30-b7a1-4ec6497cfbd3
+langcode: nl
+status: true
+dependencies: {  }
+id: section
+label: Section
+behavior_plugins: {  }

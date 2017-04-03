@@ -1,0 +1,28 @@
+uuid: 89aa46b6-d2f3-45ad-a9e3-2da1198b33bc
+langcode: nl
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - splashawards_base
+id: pagetitle
+theme: splashawards_base
+region: content
+weight: -1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      sponsor: sponsor
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,22 @@
+uuid: e6e3fc5a-7312-46c6-9f6a-78b63e20cbf1
+langcode: nl
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.case
+  module:
+    - text
+id: node.case.body
+field_name: body
+entity_type: node
+bundle: case
+label: 'Korte introductie'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary
